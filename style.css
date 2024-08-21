@@ -55,7 +55,12 @@ body {
 }
 
 .casts-icon figcaption {
-  background-color: dodgerblue;
+  background-color: #ddd;
+  color: black;
+  font-size: 10px;
+  padding: 0 6px;
+  border-radius: 12px;
+
   position: absolute;
   /* left 좌표를 컨테이닝 블록 너비 기준으로 이동 */
   /* 하쥐만 해당 요소의 왼쪽 상단 꼭지점 기준이니 심히 불편 */
@@ -89,6 +94,6 @@ body {
 
   /* 보더를 툴팁의 꼬랑지 컨셉으로 만듦 */
   border-width: 4px;
-  border-color: dodgerblue transparent transparent transparent;
+  border-color: #ddd transparent transparent transparent;
   border-style: solid;
 }
