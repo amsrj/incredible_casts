@@ -68,3 +68,27 @@ body {
   /* 자기 자신의 너비의 절반을 translateX 이동 개념으로 취함 */
   transform: translateX(-50%);
 }
+
+.casts-icon figcaption::after {
+  content: ' ';
+  position: absolute;
+
+  /* 좌우로 가용 공간을 최대치로 늘림 */
+  left: 0;
+  right: 0;
+
+  /* 아랫쪽 기준으로 배치 */
+  bottom: 0;
+
+  /* 만들어진 툴팁 꼬랑지가 밑으로 표시될 수 있게끔 구현 */
+  margin: 0 auto -8px;
+  
+  /* border로만 모양이 만들어지게 트릭을 씀 */
+  width: 0;
+  height: 0;
+
+  /* 보더를 툴팁의 꼬랑지 컨셉으로 만듦 */
+  border-width: 4px;
+  border-color: dodgerblue transparent transparent transparent;
+  border-style: solid;
+}
