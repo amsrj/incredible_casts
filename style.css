@@ -71,7 +71,22 @@ body {
   white-space: nowrap;
 
   /* 자기 자신의 너비의 절반을 translateX 이동 개념으로 취함 */
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(-100%);
+
+  transition: all .4s;
+  opacity: 0.1;
+
+  /* 마우스의 액션을 완전히 무시! */
+  pointer-events: none;
+}
+
+.casts-icon:hover {
+  z-index: 10;
+}
+
+.casts-icon:hover figcaption {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
 }
 
 .casts-icon figcaption::after {
